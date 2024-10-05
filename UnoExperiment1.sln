@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnoExperiment1", "UnoExperiment1\UnoExperiment1.csproj", "{A6B974F8-639F-4EB9-A656-A26B91CE2135}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{22B40EE9-1885-477E-A9B8-39C26D768E9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnoExperiment1.UITests", "UnoExperiment1.UITests\UnoExperiment1.UITests.csproj", "{50AAE66F-34FD-42A2-AFCE-EFFDDA706666}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnoExperiment1.Tests", "UnoExperiment1.Tests\UnoExperiment1.Tests.csproj", "{E9BE20D5-5A9E-465E-BC99-255CEB568C74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B742B91A-391A-4314-B625-E1ACC8A9436C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6B974F8-639F-4EB9-A656-A26B91CE2135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B974F8-639F-4EB9-A656-A26B91CE2135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B974F8-639F-4EB9-A656-A26B91CE2135}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A6B974F8-639F-4EB9-A656-A26B91CE2135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B974F8-639F-4EB9-A656-A26B91CE2135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6B974F8-639F-4EB9-A656-A26B91CE2135}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{50AAE66F-34FD-42A2-AFCE-EFFDDA706666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AAE66F-34FD-42A2-AFCE-EFFDDA706666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AAE66F-34FD-42A2-AFCE-EFFDDA706666}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{50AAE66F-34FD-42A2-AFCE-EFFDDA706666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AAE66F-34FD-42A2-AFCE-EFFDDA706666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50AAE66F-34FD-42A2-AFCE-EFFDDA706666}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E9BE20D5-5A9E-465E-BC99-255CEB568C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9BE20D5-5A9E-465E-BC99-255CEB568C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9BE20D5-5A9E-465E-BC99-255CEB568C74}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E9BE20D5-5A9E-465E-BC99-255CEB568C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9BE20D5-5A9E-465E-BC99-255CEB568C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9BE20D5-5A9E-465E-BC99-255CEB568C74}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50AAE66F-34FD-42A2-AFCE-EFFDDA706666} = {22B40EE9-1885-477E-A9B8-39C26D768E9B}
+		{E9BE20D5-5A9E-465E-BC99-255CEB568C74} = {22B40EE9-1885-477E-A9B8-39C26D768E9B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {922AC2A9-D3DA-4852-A017-20CB122A7C8E}
+	EndGlobalSection
+EndGlobal
