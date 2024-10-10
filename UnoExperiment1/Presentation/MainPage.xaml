@@ -24,10 +24,7 @@
         <ColumnDefinition/>
       </Grid.ColumnDefinitions>
 
-      <utu:NavigationBar
-         Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
-        Content="{Binding Title}"/>
-
+      <local:CommonTopBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"   HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
       <TextBlock Grid.Row="1" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Bottom" Text="Port" />
       <TextBlock Grid.Row="1" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Bottom" Text="Device" />
       <TextBlock Grid.Row="2" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Top" Text="COM3" />
@@ -54,8 +51,8 @@
               Padding="10"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"              
-              AutomationProperties.AutomationId="SecondPageButton"
-              Command="{Binding GoToSecond}" />
+              AutomationProperties.AutomationId="WritePcmButton"
+              Command="{Binding GoToWrite}" />
 
       <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
               Content="Get PCM Info"
@@ -63,7 +60,7 @@
               Padding="10"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"              
-              AutomationProperties.AutomationId="SecondPageButton"
+              AutomationProperties.AutomationId="GetPcmInfoButton"
               Command="{Binding GoToSecond}" />
 
       <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"
@@ -72,8 +69,8 @@
               Padding="10"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"                            
-              AutomationProperties.AutomationId="SecondPageButton"
-              Command="{Binding GoToSecond}" />
+              AutomationProperties.AutomationId="ReadPcmButton"
+              Command="{Binding GoToRead}" />
 
       <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
               Content="Help"
@@ -81,7 +78,7 @@
               Padding="10"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"              
-              AutomationProperties.AutomationId="SecondPageButton"
+              AutomationProperties.AutomationId="HelpButton"
               Command="{Binding GoToSecond}" />
 
       <Button Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"
@@ -90,7 +87,7 @@
               Padding="10"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"                            
-              AutomationProperties.AutomationId="SecondPageButton"
+              AutomationProperties.AutomationId="DataLoggingButton"
               Command="{Binding GoToSecond}" />
 
     </Grid>

@@ -85,7 +85,9 @@ public partial class App : Application
             new ViewMap(ViewModel: typeof(ShellModel)),
             new ViewMap<MainPage, MainModel>(),
             new DataViewMap<SecondPage, SecondModel, Entity>(),
-            new ViewMap<SettingsPage, SettingsModel>()
+            new ViewMap<SettingsPage, SettingsModel>(),
+            new ViewMap<WritePage, WriteModel>(),
+            new ViewMap<ReadPage, ReadModel>()
         );
 
         routes.Register(

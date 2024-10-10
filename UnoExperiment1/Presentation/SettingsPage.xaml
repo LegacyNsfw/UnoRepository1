@@ -24,12 +24,10 @@
       <ColumnDefinition/>
     </Grid.ColumnDefinitions>
 
-    <utu:NavigationBar
-         Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
-        Content="{Binding Title}"/>
-
+    <local:CommonTopBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    
     <TextBlock Grid.Row="1" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Bottom" Margin="10" Text="Which sort of OBD2 interface do you have?"/>
-    <TextBlock Grid.Row="1" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Bottom" Margin="10" Text="Do you have aftermarket CAN sensors?"/>
+    <TextBlock Grid.Row="1" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Bottom" Margin="10" Text="Do you have a SeeedStudio USB-CAN analyzer for aftermarket CAN sensors?"/>
     <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center">
       <RadioButton Content="Serial" Margin="0,0,20,0"/>
       <RadioButton Content="J2534"/>
@@ -43,7 +41,7 @@
     <TextBlock Grid.Row="3" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Bottom" Margin="10" Text="Which COM port does your OBD2 device use?" />
     <ListBox Grid.Row="4" Grid.Column="0" ItemsSource="{Binding Ports}" Margin="10"/>
 
-    <TextBlock Grid.Row="3" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Bottom" Margin="10" Text="Which COM port does your CAN interface use?" />
+    <TextBlock Grid.Row="3" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Bottom" Margin="10" Text="Which COM port does your SeeedStudio USB-CAN analyzer use?" />
     <ListBox Grid.Row="4" Grid.Column="1" ItemsSource="{Binding Ports}" Margin="10"/>
 
     <TextBlock Grid.Row="5" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Bottom" Margin="10" Text="Which sort of OBD2 device do you have?" />

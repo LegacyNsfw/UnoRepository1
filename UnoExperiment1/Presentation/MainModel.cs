@@ -29,4 +29,15 @@ public partial record MainModel
         await _navigator.NavigateViewModelAsync<SettingsModel>(this);
     }
 
+    public async Task GoToWrite()
+    {
+        var name = await Name;
+        await _navigator.NavigateViewModelAsync<WriteModel>(this);
+    }
+
+    public async Task GoToRead()
+    {
+        var name = await Name;
+        await _navigator.NavigateViewModelAsync<ReadModel>(this);
+    }
 }
